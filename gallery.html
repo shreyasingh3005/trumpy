@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo & Video Gallery | Trumpy Trampoline Park Gurugram</title>
+  <meta name="description" content="View photos and videos of Trumpy Adventure & Trampoline Park in Sector 83, Gurugram. Explore our trampoline courts, foam pit, ninja course, butterfly wings photo wall, and cafe.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Urgency Announcement Bar -->
+  <div class="top-urgency-bar">
+    <div class="bar-content">
+      <span class="badge-pill">📸 Visual Tour</span>
+      <span>Experience Gurugram's top indoor park! Book online and enjoy <strong>15% OFF</strong> with code <strong>TRUMPY15</strong>.</span>
+      <a href="index.html#book-slot-form" class="urgency-link">Book Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo-wrapper">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-badge"><i class="fa-solid fa-camera"></i></div>
+          <div>
+            TRUMPY<span class="logo-highlight">PARK</span>
+            <span class="brand-subtext">Adventure &amp; Trampoline &bull; Sector 83</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="activities.html" class="nav-link">Activities</a>
+        <a href="birthday-party.html" class="nav-link">Birthdays</a>
+        <a href="group-bookings.html" class="nav-link">Groups</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="offers.html" class="nav-link">Offers</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+919315125012" class="header-phone">
+          <i class="fa-solid fa-phone" style="color: var(--cyan);"></i>
+          <span>+91 93151 25012</span>
+        </a>
+        <a href="index.html#book-slot-form" class="btn btn-primary btn-sm btn-pulse">Book Slot</a>
+        <button class="nav-toggle" aria-label="Toggle Menu" type="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo" style="font-size: 1.3rem;">
+        TRUMPY<span class="logo-highlight">PARK</span>
+      </div>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Trumpy</a>
+      <a href="activities.html">Activities &amp; Pricing</a>
+      <a href="birthday-party.html">Birthday Packages</a>
+      <a href="group-bookings.html">Corporate &amp; School Groups</a>
+      <a href="membership.html">VIP Membership</a>
+      <a href="offers.html">Special Offers &amp; Deals</a>
+      <a href="gallery.html" class="active">Photo &amp; Video Gallery</a>
+      <a href="reviews.html">Customer Reviews (4.8★)</a>
+      <a href="faq.html">Common Questions</a>
+      <a href="contact.html">Locate Us / Contact</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="tel:+919315125012" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> Call +91 93151 25012</a>
+      <a href="https://wa.me/919315125012" target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <section style="padding: 60px 0 40px; background: linear-gradient(180deg, rgba(0, 229, 255, 0.1) 0%, transparent 100%); border-bottom: 1px solid var(--border-light);">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag" style="color: var(--cyan); border-color: rgba(0, 229, 255, 0.3);">Step Inside The Park</span>
+      <h1 style="font-size: clamp(2.3rem, 4vw, 3.5rem); margin: 12px 0 16px;">
+        Photos &amp; <span class="gradient-text">Arena Visuals</span>
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+        Take a virtual walkthrough of our high-bounce trampoline mats, Olympic foam pit, toddler maze, glowing butterfly wings, and Trumpy Café!
+      </p>
+    </div>
+  </section>
+
+  <!-- Filterable Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Highlights</button>
+        <button class="filter-btn" data-filter="trampoline">Trampoline Arena</button>
+        <button class="filter-btn" data-filter="ninja">Zipline &amp; Foam Pit</button>
+        <button class="filter-btn" data-filter="arcade">Arcade &amp; VR</button>
+        <button class="filter-btn" data-filter="toddler">Toddler Zone</button>
+        <button class="filter-btn" data-filter="birthday">Birthdays &amp; Wings</button>
+        <button class="filter-btn" data-filter="cafe">Trumpy Café</button>
+      </div>
+
+      <!-- Gallery Grid with Real Park Photos -->
+      <div class="gallery-grid">
+        <!-- Item 1: Trampoline Rebound -->
+        <div class="gallery-item" data-category="trampoline">
+          <img src="assets/images/rashijain2603_1770561829_3828070380679145735_1545691023.jpg" alt="Angled Wall Trampoline Arena">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">High-Rebound Wall Trampolines</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 2: Olympic Foam Pit with Neon Sign -->
+        <div class="gallery-item" data-category="ninja">
+          <img src="assets/images/rashijain2603_1770561829_3828070324030911567_1545691023.jpg" alt="Trumpy Neon Olympic Foam Pit">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Neon Cyan TRUMPY Foam Pit</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 3: Aerial Zipline -->
+        <div class="gallery-item" data-category="ninja">
+          <img src="assets/images/rashijain2603_1770561829_3828070335607144771_1545691023.jpg" alt="Aerial Zipline Over Arena">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Aerial High-Flying Zipline</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 4: Suspended Zip Cycling -->
+        <div class="gallery-item" data-category="ninja">
+          <img src="assets/images/rashijain2603_1770561829_3828070346982156976_1545691023.jpg" alt="Suspended Zip Cycling Gurugram">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">High-Wire Suspended Zip Cycling</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 5: Aliens Extermination Arcade -->
+        <div class="gallery-item" data-category="arcade">
+          <img src="assets/images/rashijain2603_1770561829_3828070387641711760_1545691023.jpg" alt="Aliens Extermination Gun Arcade">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Aliens Gun Arcade &amp; VR Stations</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 6: iB Cricket VR -->
+        <div class="gallery-item" data-category="arcade">
+          <img src="assets/images/rashijain2603_1770561829_3828070340103485696_1545691023.jpg" alt="iB Cricket VR Experience">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">iB Cricket Virtual Stadium</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 7: Rock Climbing Wall -->
+        <div class="gallery-item" data-category="ninja">
+          <img src="assets/images/rashijain2603_1770561829_3828070361821590225_1545691023.jpg" alt="Rock Climbing into Foam Pit">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Bouldering Wall into Foam Pit</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 8: High Ropes Obstacle -->
+        <div class="gallery-item" data-category="ninja">
+          <img src="assets/categry/719863642_1302806802020401_4551289679683052354_n.jpg" alt="High Ropes Adventure Course">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Suspended High Ropes Obstacle</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 9: Glowing Butterfly Wings -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="assets/images/anniee_gaba_1775851587_3872446117745723991_68605073531.jpg" alt="Illuminated Butterfly Wings">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Neon Butterfly Wings Photo Station</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 10: Official Mascot & Birthday Poster -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="assets/images/trumpyindia_1789816803_3989593566976086051_65614549407.jpg" alt="Trumpy Tiger Mascot Poster">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Trumpy Mascot &amp; Birthday Party Hub</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 11: Neon Birthday Cake Cutting -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="assets/categry/718687753_2550361005411158_4999443907606700440_n.jpg" alt="Neon Birthday Cake Stage">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Neon Glow Cake Cutting Stage</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 12: VIP Birthday Suite -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="assets/categry/720192339_1017267867645661_2664621732105004743_n.jpg" alt="VIP Birthday Party Room">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Private AC Birthday Celebration Suite</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 13: Live MC & Party Anchor -->
+        <div class="gallery-item" data-category="birthday">
+          <img src="assets/categry/719009884_1985051175443960_1572784318096915432_n.jpg" alt="Party MC and Anchor">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Live Party MC &amp; Mascot Dance-Off</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 14: Toddler Ball Pit -->
+        <div class="gallery-item" data-category="toddler">
+          <img src="assets/images/rashijain2603_1770561829_3828070356217989700_1545691023.jpg" alt="Toddler Soft Play Playground">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Toddler 20,000+ Ball Pool &amp; Slides</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 15: Toddler Sensory Slide -->
+        <div class="gallery-item" data-category="toddler">
+          <img src="assets/categry/719217439_1467478021819033_1160481035065563793_n.jpg" alt="Toddler Play Maze">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Toddler Sensory Slides &amp; Maze</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 16: Trumpy Cafe Lounge -->
+        <div class="gallery-item" data-category="cafe">
+          <img src="assets/images/_.mysterioussss.__1776773029_3880175195911002049_36994965304.jpg" alt="Trumpy Cafe Lounge Gurugram">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Trumpy Café &amp; Chill Zone</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 17: Family Dining At Cafe -->
+        <div class="gallery-item" data-category="cafe">
+          <img src="assets/categry/719150720_27322910730663306_7674439746600517778_n.jpg" alt="Trumpy Cafe Dining">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Parents Viewing &amp; Gourmet Dining</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+
+        <!-- Item 18: Trampoline Court Aerial -->
+        <div class="gallery-item" data-category="trampoline">
+          <img src="assets/images/rashijain2603_1770561829_3828070406331530685_1545691023.jpg" alt="Trampoline Court Arena Aerial">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">25,000 Sq Ft Trampoline Court</div>
+            <div style="font-size: 0.8rem; color: var(--cyan);"><i class="fa-solid fa-expand"></i> Click to Zoom</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Video Reels Showcase -->
+      <div style="margin-top: 60px;">
+        <div class="section-header">
+          <span class="section-tag" style="color: var(--primary); border-color: rgba(255,0,122,0.3);">Real Action Reels</span>
+          <h2 class="section-title">Watch The Energy Live In Action!</h2>
+          <p class="section-subtitle">Catch customer flips, mascot dances, and high-wire flights captured on camera.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="glass-panel" style="padding: 10px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glow);">
+            <video controls muted preload="metadata" style="width: 100%; border-radius: var(--radius-sm); aspect-ratio: 9/16; object-fit: cover; max-height: 420px; background: #000;">
+              <source src="assets/images/gsingh9466662888_1782130728_3925117781613643190_4759351574.mp4" type="video/mp4">
+            </video>
+            <div style="padding: 8px 6px 4px; font-size: 0.85rem; font-weight: 700; color: #fff;">
+              <i class="fa-solid fa-play" style="color: var(--primary); margin-right: 6px;"></i> High-Altitude Arena Jumps
+            </div>
+          </div>
+
+          <div class="glass-panel" style="padding: 10px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glow);">
+            <video controls muted preload="metadata" style="width: 100%; border-radius: var(--radius-sm); aspect-ratio: 9/16; object-fit: cover; max-height: 420px; background: #000;">
+              <source src="assets/images/drama_kingdakshit_1768740228_3812789199171693018_61325477557.mp4" type="video/mp4">
+            </video>
+            <div style="padding: 8px 6px 4px; font-size: 0.85rem; font-weight: 700; color: #fff;">
+              <i class="fa-solid fa-play" style="color: var(--cyan); margin-right: 6px;"></i> Kids Birthday Dance Fun
+            </div>
+          </div>
+
+          <div class="glass-panel" style="padding: 10px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glow);">
+            <video controls muted preload="metadata" style="width: 100%; border-radius: var(--radius-sm); aspect-ratio: 9/16; object-fit: cover; max-height: 420px; background: #000;">
+              <source src="assets/images/mommys_superstars_1777198761_3883746110892171507_4017040953.mp4" type="video/mp4">
+            </video>
+            <div style="padding: 8px 6px 4px; font-size: 0.85rem; font-weight: 700; color: #fff;">
+              <i class="fa-solid fa-play" style="color: var(--gold); margin-right: 6px;"></i> Family Weekend Masti Fest
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- High-Conversion Booking Banner -->
+      <div style="margin-top: 60px;">
+        <div class="glass-panel glass-panel-glow" style="padding: 45px 35px; text-align: center;">
+          <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Ready To Experience The Thrill In Person?</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 650px; margin: 0 auto 25px;">
+            Reserve your jump passes or party slot in under 60 seconds and claim flat 15% discount for this weekend.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <a href="index.html#book-slot-form" class="btn btn-primary btn-lg"><i class="fa-solid fa-bolt"></i> Book Your Slot Online</a>
+            <a href="https://wa.me/919315125012?text=Hi%20Trumpy!%20I%20saw%20your%20gallery%20and%20want%20to%20book%20a%20slot." target="_blank" class="btn btn-whatsapp btn-lg">
+              <i class="fa-brands fa-whatsapp"></i> Reserve on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="" alt="Zoomed View" class="lightbox-content" id="lightboxImg">
+  </div>
+
+  <!-- Master Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            TRUMPY<span class="logo-highlight">PARK</span>
+          </div>
+          <p>
+            Trumpy Adventure &amp; Trampoline Park is New Gurugram's premier family entertainment centre opposite Sapphire 83 Mall. High energy, zero screens, maximum fun!
+          </p>
+          <div style="display: flex; gap: 12px; font-size: 1.2rem;">
+            <a href="https://instagram.com" target="_blank" style="color: var(--primary);"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" style="color: var(--cyan);"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank" style="color: #ff0000;"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/919315125012" target="_blank" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Park</a></li>
+            <li><a href="activities.html">Activities &amp; Pricing</a></li>
+            <li><a href="birthday-party.html">Birthday Packages</a></li>
+            <li><a href="group-bookings.html">Corporate &amp; Schools</a></li>
+            <li><a href="membership.html">VIP Membership</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Visitor Guide</h4>
+          <ul class="footer-links">
+            <li><a href="offers.html">Special Offers &amp; Deals</a></li>
+            <li><a href="gallery.html">Photo &amp; Video Gallery</a></li>
+            <li><a href="reviews.html">Customer Reviews (4.8★)</a></li>
+            <li><a href="faq.html">Safety &amp; Rules FAQ</a></li>
+            <li><a href="contact.html">Directions &amp; Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact &amp; Location</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Opposite Sapphire 83 Mall, Sector 83, Gurugram, Haryana 122004</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919315125012" style="color: #fff; font-weight: 700;">+91 93151 25012</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/919315125012" target="_blank" style="color: #25D366; font-weight: 700;">+91 93151 25012</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon &ndash; Sun: 11:00 AM &ndash; 10:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Trumpy Adventure &amp; Trampoline Park. All rights reserved.</div>
+        <div>Sector 83, Gurugram &bull; Designed for Maximum Lead Conversion</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions-container">
+    <a href="https://wa.me/919315125012?text=Hi%20Trumpy!%20I%20saw%20your%20gallery%20and%20want%20to%20book%20a%20slot." target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat on WhatsApp</span>
+    </a>
+    <a href="tel:+919315125012" class="float-btn float-call" aria-label="Call Trumpy Desk">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call +91 93151 25012</span>
+    </a>
+  </div>
+
+  <!-- Callback Drawer -->
+  <div class="callback-drawer-toggle">
+    <i class="fa-solid fa-phone-volume"></i>
+    <span>Request a Callback</span>
+  </div>
+
+  <div class="callback-drawer">
+    <div class="callback-drawer-header">
+      <div style="font-weight: 800; font-size: 1rem; color: #fff;">📞 60-Second Callback</div>
+      <button class="callback-drawer-close">&times;</button>
+    </div>
+    <form id="callbackQuickForm">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" class="form-control" placeholder="10-digit Phone" required pattern="[0-9]{10}">
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">Call Me Back</button>
+    </form>
+  </div>
+
+  <!-- Exit Intent Modal -->
+  <div class="exit-popup-modal" id="exitPopupModal">
+    <div class="exit-popup-card">
+      <button class="exit-popup-close" id="exitPopupClose">&times;</button>
+      <span class="popup-discount-badge">🎁 Special Online Offer</span>
+      <h3 style="font-size: 1.8rem; margin-bottom: 8px;">WAIT! Grab FLAT 15% OFF</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        Unlock code <strong>TRUMPY15</strong> valid on all jump slots this weekend!
+      </p>
+      <form id="exitPopupForm">
+        <div class="form-group">
+          <input type="tel" name="phone" class="form-control" placeholder="Enter your 10-digit WhatsApp number" required pattern="[0-9]{10}">
+        </div>
+        <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">
+          <i class="fa-solid fa-gift"></i> Unlock My 15% OFF Voucher
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Confirmation Modal -->
+  <div class="success-modal" id="successModal">
+    <div class="success-card">
+      <button class="exit-popup-close" id="successClose">&times;</button>
+      <div class="success-icon-wrapper"><i class="fa-solid fa-check"></i></div>
+      <h3 style="font-size: 1.7rem; margin-bottom: 8px; color: #fff;">Request Received!</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+        Thank you! Click below to send your slot details directly to our WhatsApp booking desk for instant confirmation.
+      </p>
+      <a href="https://wa.me/919315125012" target="_blank" id="whatsappSendBtn" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+        <i class="fa-brands fa-whatsapp"></i> Confirm on WhatsApp (+91 93151 25012)
+      </a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
